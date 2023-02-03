@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+ul {
+    padding-left: 10px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+li {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+
+/* Border to elements */
+header,
+article,
+aside,
+footer {
+    border: 1px solid #111;
+}
+
+/* Margin and padding to structural elements*/
+header,
+article,
+aside,
+footer {
+    border: 1px solid #111;
+    padding: 10px 1em;
+    margin: 0 5% 10px;
+}
+
+header {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 40em) {
+    article {
+        width: 67%;
+        float: left;
+        margin-right: 0;
+    }
+
+    aside {
+        width: 21%;
+        float: right;
+        margin-left: 0;
+    }
+
+    footer {
+        clear: both;
+    }
+}
+
+article img {
+    width: 100%;
+}
+
+article img {
+    max-width: 400px;
+    max-height: 100%;
+}
+
+article img {}
+
+@media only screen and (min-width: 28em) {
+    article img {
+        float: right;
+        padding-left: 3%;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* Background Image for header */
+header {
+    background-image: url(images/harambeBanner.png);
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* optional, center the image */
+}
