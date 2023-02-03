@@ -102,7 +102,7 @@ article img {}
 
 /* Background Image for header */
 header {
-    background-image: url(./images/harambeBanner.png);
+    background-image: url(./images/harambebanner.png);
     background-size: cover;
     /* <------ */
     background-repeat: no-repeat;
