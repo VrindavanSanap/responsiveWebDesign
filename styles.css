@@ -7,21 +7,20 @@
 
 /* Basic Styles */
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h1,
 h2 {
     font-weight: bold;
-    margin: 5px 0;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.25em;
     margin: 5px 0;
 }
 
@@ -47,13 +46,20 @@ footer {
 }
 
 /* Margin and padding to structural elements*/
+h1,
+h2,
+p {
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
 header,
 article,
 aside,
 footer {
     border: 1px solid #111;
     padding: 10px 1em;
-    margin: 0 5% 10px;
+    margin: 0 2% 10px;
 }
 
 header {
@@ -95,6 +101,7 @@ article img {}
     article img {
         float: right;
         padding-left: 3%;
+        padding-right: 3%;
         padding-bottom: 10px;
     }
 }
@@ -108,4 +115,35 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     /* optional, center the image */
+}
+
+/* Buttons for nav bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    border: 1px solid #666;
+    background-color: #eee;
+    padding: 10px 1em;
+    margin: 2px 0 0;
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 30em) {
+    nav li {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+
+    nav {
+        padding-bottom: 3em;
+    }
 }
